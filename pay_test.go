@@ -26,7 +26,6 @@ func TestPay(t *testing.T) {
 	fmt.Println(fdata)
 }
 
-
 //初始化客户端
 func initClient() {
 	client.InitAliAppClient(&client.AliAppClient{
