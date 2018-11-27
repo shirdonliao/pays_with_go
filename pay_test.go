@@ -8,14 +8,14 @@ import (
 	"net/http"
 	"testing"
 )
-
+//测试
 func TestPay(t *testing.T) {
 	initClient()
 	initHandle()
 	charge := new(common.Charge)
 	charge.PayMethod = constant.WECHAT
 	charge.MoneyFee = 1
-	charge.Describe = "test pay"
+	charge.Describe = "测试订单"
 	charge.TradeNum = "8888888888"
 
 	fdata, err := do(charge)
