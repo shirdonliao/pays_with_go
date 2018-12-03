@@ -52,6 +52,7 @@ func checkCharge(charge *common.Charge) error {
 }
 
 // getPayClient 得到需要支付的客户端
+
 func getPayClient(payMethod int64) common.PayClient {
 	//如果使用余额支付
 	switch payMethod {
